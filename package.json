@@ -1,1 +1,17 @@
-{"name":"aurelia-estates-demo","private":true,"type":"module","scripts":{"start":"node server.mjs","check":"node --check dist/app.js"}}
+{
+  "name": "aurelia-estates-demo",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs",
+    "check": "node --check dist/app.js",
+    "test": "playwright test",
+    "optimize:images": "node scripts/optimize-images.mjs"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.14.0",
+    "@fontsource-variable/dm-sans": "^5.3.0",
+    "@playwright/test": "^1.64.1",
+    "sharp": "^0.35.5"
+  }
+}
