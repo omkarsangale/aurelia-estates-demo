@@ -1,0 +1,22 @@
+{
+  "hero": {
+    "width": 1800,
+    "height": 1194
+  },
+  "living": {
+    "width": 2000,
+    "height": 1333
+  },
+  "pool": {
+    "width": 1800,
+    "height": 1201
+  },
+  "residences": {
+    "width": 1600,
+    "height": 1600
+  },
+  "commercial": {
+    "width": 1600,
+    "height": 1068
+  }
+}

@@ -6,7 +6,7 @@ The refined design includes larger supporting text (17–19px body copy, 16px fo
 
 ## Present the website
 
-Open `dist/index.html` in Chrome or Edge. The website has no installation or build requirements, and all five photographs are included locally. An internet connection loads the optional web fonts; system fonts provide a fallback.
+Open `dist/index.html` in Chrome or Edge. The website has no runtime installation or build requirements. Photographs, responsive WebP variants and the DM Sans font are included locally; system fonts provide a fallback.
 
 For a local HTTP preview, run `node server.mjs` in this directory and visit http://127.0.0.1:4173. Press Ctrl+C to stop the server.
 
@@ -30,14 +30,14 @@ Bundled Unsplash source images:
 
 - Hero: https://images.unsplash.com/photo-1600596542815-ffad4c1539a9
 - Interiors: https://images.unsplash.com/photo-1600607687920-4e2a09cf159d
-- Residences: https://images.unsplash.com/photo-1600585154340-be6161a56a0c
-- Commercial: https://images.unsplash.com/photo-1486406146926-c627a92ad1ab
+- Residences: https://images.unsplash.com/photo-1575627853189-5af447c0e951
+- Commercial: https://images.unsplash.com/photo-1497366754035-f200968a6e72
 - Lifestyle: https://images.unsplash.com/photo-1613977257363-707ba9348227
 
 ## Validation
 
-JavaScript syntax check passed. Browser checks covered desktop and mobile widths, image loading, category filtering, project details, selected-project transfer to the visit form, form preview, lifestyle gallery, and mobile navigation. No horizontal overflow was found at the inspected widths.
+Run `npm run check` and `npm test` after `npm ci` to reproduce the syntax and Chrome browser checks. Browser journeys cover 320, 390, 768, 1024 and 1440px, all project and gallery controls, filters, selections, validation, keyboard operation, reduced motion, image delivery and overflow. See [REVIEW-NOTES.md](REVIEW-NOTES.md) for details and limitations, and open [review/index.html](review/index.html) for paired before/after captures.
 
 ## Hosting
 
-The private Sites project ID is preserved in `.openai/hosting.json`. Publication could not complete because the environment could not connect to `git.chatgpt-team.site` over HTTPS. No successful deployment is claimed. Resume publication using the existing project ID rather than creating a new Site.
+This refinement is local only. No deployment or live enquiry backend has been connected. Existing hosting metadata is preserved in `.openai/hosting.json`. The Netlify badge setting and production overlap still require owner-side verification; see REVIEW-NOTES.md.
